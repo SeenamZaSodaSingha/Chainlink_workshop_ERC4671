@@ -1,0 +1,807 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Minted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Revoked",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "hasValid",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "isValid",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "ownerOf",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "tokenURI",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "balanceOf(address)": "70a08231",
+    "hasValid(address)": "43945512",
+    "isValid(uint256)": "f577a500",
+    "name()": "06fdde03",
+    "ownerOf(uint256)": "6352211e",
+    "supportsInterface(bytes4)": "01ffc9a7",
+    "symbol()": "95d89b41",
+    "tokenURI(uint256)": "c87b56dd"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Minted\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Revoked\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"hasValid\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"isValid\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"balanceOf(address)\":{\"params\":{\"owner\":\"Address for whom to query the balance\"},\"returns\":{\"_0\":\"Number of tokens owned by `owner`\"}},\"hasValid(address)\":{\"params\":{\"owner\":\"Address for whom to check the ownership\"},\"returns\":{\"_0\":\"True if `owner` has a valid token, false otherwise\"}},\"isValid(uint256)\":{\"params\":{\"tokenId\":\"Identifier of the token\"},\"returns\":{\"_0\":\"True if the token is valid, false otherwise\"}},\"name()\":{\"returns\":{\"_0\":\"Descriptive name of the tokens in this contract\"}},\"ownerOf(uint256)\":{\"params\":{\"tokenId\":\"Identifier of the token\"},\"returns\":{\"_0\":\"Address of the owner of `tokenId`\"}},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.\"},\"symbol()\":{\"returns\":{\"_0\":\"An abbreviated name of the tokens in this contract\"}},\"tokenURI(uint256)\":{\"params\":{\"tokenId\":\"Identifier of the token\"},\"returns\":{\"_0\":\"URI for the token\"}}},\"version\":1},\"userdoc\":{\"events\":{\"Minted(address,uint256)\":{\"notice\":\"Event emitted when a token `tokenId` is minted for `owner`\"},\"Revoked(address,uint256)\":{\"notice\":\"Event emitted when token `tokenId` of `owner` is revoked\"}},\"kind\":\"user\",\"methods\":{\"balanceOf(address)\":{\"notice\":\"Count all tokens assigned to an owner\"},\"hasValid(address)\":{\"notice\":\"Check if an address owns a valid token in the contract\"},\"isValid(uint256)\":{\"notice\":\"Check if a token hasn't been revoked\"},\"ownerOf(uint256)\":{\"notice\":\"Get owner of a token\"},\"tokenURI(uint256)\":{\"notice\":\"URI to query to get the token's metadata\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IERC4671Metadata.sol\":\"IERC4671Metadata\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"contracts/interfaces/IERC4671.sol\":{\"keccak256\":\"0x88261c2f4ed60a27e2eeea2386edccda0182054e6a10b45ffa6dd6ffb33b40a9\",\"license\":\"CC0-1.0\",\"urls\":[\"bzz-raw://b221e21fa286e604ae526c335150d183452ce0a47deee0e4817162a6a8211316\",\"dweb:/ipfs/Qme7QQ7opMqtTN53vvBk6CkNBMukSz8zcnDgZ9iiNyxzKS\"]},\"contracts/interfaces/IERC4671Metadata.sol\":{\"keccak256\":\"0xaaed9686ad72d29c4dfd7ad3ee392873b4e7ea9578473ca7178752b9a10ec5c7\",\"license\":\"CC0-1.0\",\"urls\":[\"bzz-raw://5afdee61abb015d785af92b9c6d6615c40596339e3523a8e1561d393aee6ddf1\",\"dweb:/ipfs/QmWjNYJ1zho8uZ3B4tGSQ3ZJ6SNJkbLt3FgL7ZLFhzudNw\"]},\"lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.9+commit.e5eed63a"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Minted",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Revoked",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "balanceOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "hasValid",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isValid",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "name",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "ownerOf",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes4",
+              "name": "interfaceId",
+              "type": "bytes4"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "supportsInterface",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "symbol",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "tokenURI",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "balanceOf(address)": {
+            "params": {
+              "owner": "Address for whom to query the balance"
+            },
+            "returns": {
+              "_0": "Number of tokens owned by `owner`"
+            }
+          },
+          "hasValid(address)": {
+            "params": {
+              "owner": "Address for whom to check the ownership"
+            },
+            "returns": {
+              "_0": "True if `owner` has a valid token, false otherwise"
+            }
+          },
+          "isValid(uint256)": {
+            "params": {
+              "tokenId": "Identifier of the token"
+            },
+            "returns": {
+              "_0": "True if the token is valid, false otherwise"
+            }
+          },
+          "name()": {
+            "returns": {
+              "_0": "Descriptive name of the tokens in this contract"
+            }
+          },
+          "ownerOf(uint256)": {
+            "params": {
+              "tokenId": "Identifier of the token"
+            },
+            "returns": {
+              "_0": "Address of the owner of `tokenId`"
+            }
+          },
+          "supportsInterface(bytes4)": {
+            "details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas."
+          },
+          "symbol()": {
+            "returns": {
+              "_0": "An abbreviated name of the tokens in this contract"
+            }
+          },
+          "tokenURI(uint256)": {
+            "params": {
+              "tokenId": "Identifier of the token"
+            },
+            "returns": {
+              "_0": "URI for the token"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "balanceOf(address)": {
+            "notice": "Count all tokens assigned to an owner"
+          },
+          "hasValid(address)": {
+            "notice": "Check if an address owns a valid token in the contract"
+          },
+          "isValid(uint256)": {
+            "notice": "Check if a token hasn't been revoked"
+          },
+          "ownerOf(uint256)": {
+            "notice": "Get owner of a token"
+          },
+          "tokenURI(uint256)": {
+            "notice": "URI to query to get the token's metadata"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/IERC4671Metadata.sol": "IERC4671Metadata"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/IERC4671.sol": {
+        "keccak256": "0x88261c2f4ed60a27e2eeea2386edccda0182054e6a10b45ffa6dd6ffb33b40a9",
+        "urls": [
+          "bzz-raw://b221e21fa286e604ae526c335150d183452ce0a47deee0e4817162a6a8211316",
+          "dweb:/ipfs/Qme7QQ7opMqtTN53vvBk6CkNBMukSz8zcnDgZ9iiNyxzKS"
+        ],
+        "license": "CC0-1.0"
+      },
+      "contracts/interfaces/IERC4671Metadata.sol": {
+        "keccak256": "0xaaed9686ad72d29c4dfd7ad3ee392873b4e7ea9578473ca7178752b9a10ec5c7",
+        "urls": [
+          "bzz-raw://5afdee61abb015d785af92b9c6d6615c40596339e3523a8e1561d393aee6ddf1",
+          "dweb:/ipfs/QmWjNYJ1zho8uZ3B4tGSQ3ZJ6SNJkbLt3FgL7ZLFhzudNw"
+        ],
+        "license": "CC0-1.0"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol": {
+        "keccak256": "0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1",
+        "urls": [
+          "bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
+          "dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/IERC4671Metadata.sol",
+    "id": 845,
+    "exportedSymbols": {
+      "IERC165": [
+        3601
+      ],
+      "IERC4671": [
+        782
+      ],
+      "IERC4671Metadata": [
+        844
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:577:4",
+    "nodes": [
+      {
+        "id": 820,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:4",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 821,
+        "nodeType": "ImportDirective",
+        "src": "66:24:4",
+        "absolutePath": "contracts/interfaces/IERC4671.sol",
+        "file": "./IERC4671.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 845,
+        "sourceUnit": 783,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 844,
+        "nodeType": "ContractDefinition",
+        "src": "94:522:4",
+        "nodes": [
+          {
+            "id": 829,
+            "nodeType": "FunctionDefinition",
+            "src": "205:54:4",
+            "documentation": {
+              "id": 824,
+              "nodeType": "StructuredDocumentation",
+              "src": "140:59:4",
+              "text": "@return Descriptive name of the tokens in this contract"
+            },
+            "functionSelector": "06fdde03",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "name",
+            "nameLocation": "214:4:4",
+            "parameters": {
+              "id": 825,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "218:2:4"
+            },
+            "returnParameters": {
+              "id": 828,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 827,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 829,
+                  "src": "244:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 826,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "244:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "243:15:4"
+            },
+            "scope": 844,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 835,
+            "nodeType": "FunctionDefinition",
+            "src": "335:56:4",
+            "documentation": {
+              "id": 830,
+              "nodeType": "StructuredDocumentation",
+              "src": "267:62:4",
+              "text": "@return An abbreviated name of the tokens in this contract"
+            },
+            "functionSelector": "95d89b41",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "symbol",
+            "nameLocation": "344:6:4",
+            "parameters": {
+              "id": 831,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "350:2:4"
+            },
+            "returnParameters": {
+              "id": 834,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 833,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 835,
+                  "src": "376:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 832,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "375:15:4"
+            },
+            "scope": 844,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 843,
+            "nodeType": "FunctionDefinition",
+            "src": "540:73:4",
+            "documentation": {
+              "id": 836,
+              "nodeType": "StructuredDocumentation",
+              "src": "399:135:4",
+              "text": "@notice URI to query to get the token's metadata\n @param tokenId Identifier of the token\n @return URI for the token"
+            },
+            "functionSelector": "c87b56dd",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenURI",
+            "nameLocation": "549:8:4",
+            "parameters": {
+              "id": 839,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 838,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "566:7:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 843,
+                  "src": "558:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 837,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "558:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "557:17:4"
+            },
+            "returnParameters": {
+              "id": 842,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 841,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 843,
+                  "src": "598:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 840,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "598:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "597:15:4"
+            },
+            "scope": 844,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 822,
+              "name": "IERC4671",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 782,
+              "src": "124:8:4"
+            },
+            "id": 823,
+            "nodeType": "InheritanceSpecifier",
+            "src": "124:8:4"
+          }
+        ],
+        "canonicalName": "IERC4671Metadata",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          844,
+          782,
+          3601
+        ],
+        "name": "IERC4671Metadata",
+        "nameLocation": "104:16:4",
+        "scope": 845,
+        "usedErrors": []
+      }
+    ],
+    "license": "CC0-1.0"
+  },
+  "id": 4
+}
